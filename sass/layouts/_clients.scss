@@ -8,10 +8,10 @@
     height: 90px;
 
     flex-basis: calc((100% - 30px) / 2);
-    @media screen and (min-width: 768px) {
+    @include tablet {
       flex-basis: calc((100% - 60px) / 3);
     }
-    @media screen and (min-width: 1200px) {
+    @include decktop {
       flex-basis: calc((100% - 150px) / 6);
     }
   }
