@@ -1,0 +1,14 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(null, 26px, 1.19, 0.03em);
+
+  text-decoration: none;
+  display: inline-block;
+  color: var(--accent-color);
+}
+.navigation__logo {
+  color: var(--only-black);
+}
+.footer-wrap__logo {
+  color: var(--primary-white-color);
+}

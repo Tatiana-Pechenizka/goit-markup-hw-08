@@ -1,0 +1,25 @@
+.examples-list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  &__wrap {
+    position: relative;
+  }
+  &__text {
+    @include font(700, null, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

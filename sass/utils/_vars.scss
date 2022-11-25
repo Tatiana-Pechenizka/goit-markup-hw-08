@@ -1,0 +1,20 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --opacity-white-color: rgba(255, 255, 255, 0.6);
+  --only-black: #000000;
+  --rare-bg-color: #f5f4fa;
+  --secondary-blue-color: #188ce8;
+  --secondary-border-color: #eeeeee;
+  --primary-btn-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --transition-hover-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-border: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
