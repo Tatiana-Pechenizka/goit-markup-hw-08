@@ -11,7 +11,7 @@
     @include tablet {
       flex-basis: calc((100% - 30px) / 2);
     }
-    @include decktop {
+    @include desktop {
       flex-basis: calc((100% - 90px) / 4);
     }
 

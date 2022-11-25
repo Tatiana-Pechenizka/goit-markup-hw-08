@@ -17,6 +17,7 @@
   --transition-hover-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-hover-border: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-hover-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 p,
@@ -437,22 +438,39 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
+  background-image: var(--gradient), url(../images/bg-hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: var(--gradient), url(../images/bg-hero-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
+    background-image: var(--gradient), url(../images/bg-hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: var(--gradient), url(../images/bg-hero-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: var(--gradient), url(../images/background-hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: var(--gradient), url(../images/bg-hero-des-2x.jpg);
   }
 }
 .hero-section__container {
@@ -460,14 +478,23 @@ body {
 }
 .hero-section__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 .hero-section__btn {
   padding: 10px 32px;

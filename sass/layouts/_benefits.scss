@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @include decktop {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 0px;
   }
@@ -23,7 +23,7 @@
     @include tablet {
       flex-basis: calc((100% - 30px) / 2);
     }
-    @include decktop {
+    @include desktop {
       flex-basis: calc((100% - 90px) / 4);
     }
   }
