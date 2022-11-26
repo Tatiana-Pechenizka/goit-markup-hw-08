@@ -12,7 +12,7 @@
 }
 
 .navigation__menu {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: 93px;
   .link {
@@ -45,7 +45,7 @@
 }
 
 .header__contacts {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: auto;
   align-items: center;
