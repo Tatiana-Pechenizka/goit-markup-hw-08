@@ -58,6 +58,84 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open menu-mob__btn" data-menu-open>
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- -----Мобільне вікно---------------------------- -->
+      <div class="menu-mob is-hidden" data-menu>
+        <div class="container container-mob">
+          <button type="button" class="menu-close menu-mob__btn" data-menu-close>
+            <svg class="menu-close__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="menu-mob-wrap">
+            <ul class="list menu-mob-list">
+              <li class="menu-mob-list__item">
+                <a href="./index.html" class="link studio">Студія</a>
+              </li>
+              <li class="menu-mob-list__item">
+                <a href="./portfolio.html" class="link">Портфоліо</a>
+              </li>
+              <li class="menu-mob-list__item">
+                <a href="#" class="link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div contacts-mob-wrap>
+            <ul class="list contacts-mob-list">
+              <li class="contacts-mob-list__item">
+                <a href="tel:+380961111111" class="link mob-link-tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="contacts-mob-list__item">
+                <a href="mailto:info@devstudio.com" class="link mob-link-mail">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-mob-list list">
+              <li class="soc-mob-list__item">
+                <a
+                  class="link soc-mob-list__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="soc-mob-list__item">
+                <a
+                  class="link soc-mob-list__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="soc-mob-list__item">
+                <a
+                  class="link soc-mob-list__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="soc-mob-list__item">
+                <a
+                  class="link soc-mob-list__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -713,5 +791,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
