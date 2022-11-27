@@ -31,9 +31,12 @@
   }
 
   &-title {
-    @include font(700, 20px, 1.15, 0.03em);
+    @include font(700, 4vw, 1.15, 0.03em);
     text-align: center;
     margin-bottom: 12px;
+    @include mobile {
+      @include font(700, 20px, 1.15, 0.03em);
+    }
   }
 
   &-input {
