@@ -1,6 +1,9 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  @include font(null, 26px, 1.19, 0.03em);
+  @include font(null, 24px, 1.17, 0.03em);
+  @include desktop {
+    @include font(null, 26px, 1.19, 0.03em);
+  }
 
   text-decoration: none;
   display: inline-block;
