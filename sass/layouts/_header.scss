@@ -6,6 +6,10 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    @include tablet {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 }
 
@@ -17,9 +21,12 @@
 .navigation__menu {
   display: none;
   gap: 50px;
-  margin-left: 93px;
+  margin-left: 88px;
   @include tablet {
     display: flex;
+  }
+  @include desktop {
+    margin-left: 93px;
   }
   .link {
     @include font(500, null, 1.14, 0.02em);
@@ -52,11 +59,15 @@
 
 .header__contacts {
   display: none;
-  gap: 50px;
+
   margin-left: auto;
   align-items: center;
   @include tablet {
+    display: block;
+  }
+  @include desktop {
     display: flex;
+    gap: 50px;
   }
   .link {
     @include font(500, null, 1.14, 0.02em);
@@ -70,10 +81,35 @@
     }
   }
 }
+.contacts-tab-mail {
+  margin-bottom: 10px;
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}
 
 .contacts__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+
+  @include desktop {
+    margin-right: 10px;
+  }
+}
+.icon-tab-mail {
+  width: 14px;
+  height: 10px;
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+.icon-tab-tel {
+  width: 10px;
+  height: 14px;
+  @include desktop {
+    height: 16px;
+  }
 }
 
 .menu-mob__btn {
